@@ -125,7 +125,7 @@
 
             const totalFootprint = (electricityEmissions + transportEmissions + gasEmissions + dietEmissions).toFixed(2);
 
-            document.getElementById('result-box').style.getpropertyvalue ? document.getElementById('result-box').style.setProperty('display', 'block') : document.getElementById('result-box').style.display = 'block';
+            document.getElementById('result-box').style.display = 'block';
             document.getElementById('total-score').textContent = totalFootprint + " kg CO2e / month";
 
             const feedbackElement = document.getElementById('evaluation-feedback');
@@ -141,3 +141,4 @@
                 if (gasEmissions > 40) structuralRecommendations.push("Optimize thermal transfer efficiency during food preparation cycles and evaluate high-efficiency induction infrastructure solutions.");
                 if (dietEmissions > 100) structuralRecommendations.push("Shift protein sourcing velocity toward plant-forward inputs to truncate global agricultural supply chain resource demands.");
             } else {
+                feedbackElement.textContent = "Audit Assessment: Optimal Resource Efficiency. Current tracking matches targeted environmental benchmarks. Continue operational paradigms.";
